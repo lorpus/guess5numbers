@@ -138,7 +138,8 @@ def main():
             for element in all_guesses_results:
                 print(element[i], "   │" ,element[i+1], "/", element[i+2])
                 i += 3
-
+            print("—"*5)
+            
             if check_number_of_right_numbers(subset, guessed_list) == 5 and \
                     check_number_of_equal_indexes(subset, guessed_list) == 5:
                 guess = True
